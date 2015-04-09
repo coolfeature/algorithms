@@ -13,12 +13,12 @@ C++ implementations of most popular algortihms
 
 ## Arrays
 - **Sorting**
-  - Selection Sort (*time:* **O(n<sup>2</sup>)** *space*: **O(1)**)
-  - Merge Sort (*time:* **O(n log n)** *space*: **O(n)**)
-  - Quick Sort (*time:* **(n log n) - O(n<sup>2</sup>)** *space*: **O(log n) - O(n)**)
+  - Selection Sort - *time:* **O(n<sup>2</sup>)** *space*: **O(1)**
+  - Merge Sort - *time:* **O(n log n)** *space*: **O(n)**
+  - Quick Sort - *time:* **(n log n)** *up to* **O(n<sup>2</sup>)** *space*: **O(log n)** *up to* **O(n)**
 - **Searching**
-  - Binary Search (*time:* **O(log n)** *space*: **O(1)**)
+  - Binary Search - *time:* **O(log n)** *space*: **O(1)**
 - **Other**
-  - Array Merge (*time:* **O(n)** *space*: **O(n)**)
+  - Array Merge - *time:* **O(n)** *space*: **O(n)**
 
 
