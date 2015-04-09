@@ -4,8 +4,8 @@ using namespace std;
 
 /* 
  * ========================== SELECTION SORT ==================================
- * Take every element in squence and scan the remaining set to check if 
- * a smaller element exist. If it does swap the two elements.
+ * Take every element in squence and scan the remaining set to find the 
+ * smallest remaining element. If such element exists swap the two elements.
  * == TIME: O(n^2)
  * == SPACE: O(1)
  */
@@ -70,7 +70,8 @@ void mergeSort(int * a, int len, int low, int high) {
 
 /*
  * ============================= QUICK SORT ===================================
- * Use DIVIDE AND CONQUER to split an array into three, sort the two. 
+ * Use DIVIDE AND CONQUER to split an array into three, sort the two and merge
+ * back.  
  * == TIME: Between best O(n log n) and O(n^2) worst
  * == SPACE: Between best O(log n) and O(n)
  */
@@ -108,7 +109,7 @@ void quickSort(int * a,int start, int end) {
 /**
  * ============================ BINARY SEARCH =================================
  * Search a half of array and each sub-array on every iteration
- * The array need to be sorted!
+ * The array needs to be sorted!
  * == TIME: O(log n) 
  */
 int binarySearch(int elem, int * arr, int len) {
