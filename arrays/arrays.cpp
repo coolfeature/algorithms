@@ -72,6 +72,15 @@ void mergeSort(int * a, int len, int low, int high) {
  * ============================= QUICK SORT ===================================
  * Use DIVIDE AND CONQUER to split an array into three, sort the two and merge
  * back.  
+ * PARTITION ALGORITHM:
+ * 1) Save pivot value
+ * 2) Save pivot index (p)
+ * 3) For every element starting from start to end
+ *   a) If a[i] is <= pivot
+ *     * swap a[i] with a[p]
+ *     * increment p
+ * 4) Swap a[end] with a[p]
+ * 5) Return p
  * == TIME: Between best O(n log n) and O(n^2) worst
  * == SPACE: Between best O(log n) and O(n)
  */
