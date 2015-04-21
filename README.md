@@ -11,6 +11,8 @@ C++ implementations of most popular algortihms
 | O(n<sup>3</sup>)      | cubic time       | less often feasible   |
 | O(2<sup>n</sup>)      | exponential time | rarely feasible       |
 
+**Time complexity** is the *rate* at which the *time requirement* of an algorithm *grows* as a *function of its input data*.
+
 ## Arrays
 - **Sorting**
   - Selection Sort - *time:* **O(n<sup>2</sup>)** *space*: **O(1)**
