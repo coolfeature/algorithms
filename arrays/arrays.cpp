@@ -59,6 +59,15 @@ void merge(int * a, int len, int low, int mid, int high) {
   while(i<=mid) { a[k] = temp[i]; i++; k++; };
 }
 
+/*
+ * 1) If left < right
+ * 2) Set m to middle between left and right
+ * 3) Sort a[left to m] asc
+ * 4) Sort a[m+1 to right] asc
+ * 5) Merge a[left to m] and a[m+1 to right] into b
+ * 6) Copy all elements of b into a[left to right]
+ * 7) Termiante
+ */
 void mergeSort(int * a, int len, int low, int high) {
   if (low<high) {
     int mid = (low + high)/2;
