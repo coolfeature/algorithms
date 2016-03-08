@@ -32,6 +32,19 @@ public class Main {
 		ParallelQuickSort.quickSort(arr);
 		long end = System.currentTimeMillis();
 		System.out.println("[" + (end-start) + "]" + Arrays.toString(arr));
+		System.out.println("Second highest: " + get2ndHighestUnique(arr));
+	}
+	
+	private static int get2ndHighestUnique(int[] sortedArr) {
+		int index = sortedArr.length - 2;
+		while(index >= 0) {
+			if (sortedArr[index] == sortedArr[index-1] || sortedArr[index] == sortedArr[index+1]) {
+				index--;
+			} else {
+				return sortedArr[index];
+			}
+		}
+		throw new IllegalStateException("No unique values");
 	}
 
 }
