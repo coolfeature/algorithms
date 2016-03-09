@@ -1,6 +1,5 @@
 
-
-public class ParallelQuickSort {
+public class ParallelQuickSortThreadJoin {
 	
 	public static void spawnSort (Runnable task) {
 		Thread t = new Thread(task);
